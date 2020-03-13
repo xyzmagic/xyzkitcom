@@ -1,0 +1,319 @@
+/*
+ * Skin: Black
+ * -----------
+ */
+/* skin-black navbar */
+.skin-black-light .main-header {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+.skin-black-light .main-header .navbar-toggle {
+  color: #333;
+}
+.skin-black-light .main-header .navbar-brand {
+  color: #333;
+  border-right: 1px solid #eee;
+}
+.skin-black-light .main-header .navbar {
+  background-color: #ffffff;
+}
+.skin-black-light .main-header .navbar .nav > li > a {
+  color: #333333;
+}
+.skin-black-light .main-header .navbar .nav > li > a:hover,
+.skin-black-light .main-header .navbar .nav > li > a:active,
+.skin-black-light .main-header .navbar .nav > li > a:focus,
+.skin-black-light .main-header .navbar .nav .open > a,
+.skin-black-light .main-header .navbar .nav .open > a:hover,
+.skin-black-light .main-header .navbar .nav .open > a:focus,
+.skin-black-light .main-header .navbar .nav > .active > a {
+  background: #ffffff;  
+  color: #4285f4; /***  #999999   shang  ***/
+}
+.skin-black-light .main-header .navbar .sidebar-toggle {
+  color: #333333;
+}
+.skin-black-light .main-header .navbar .sidebar-toggle:hover {
+  color: #4285f4; /***  #999999   shang  ***/
+  background: #ffffff;
+}
+.skin-black-light .main-header .navbar > .sidebar-toggle {
+  color: #333;
+  /** border-right: 1px solid #eee; **/  /** shang delete  **/
+}
+.skin-black-light .main-header .navbar .navbar-nav > li > a {
+  border-right: 1px solid #eee;
+}
+.skin-black-light .main-header .navbar .navbar-custom-menu .navbar-nav > li > a,
+.skin-black-light .main-header .navbar .navbar-right > li > a {
+  /** border-left: 1px solid #eee; **/  /** shang delete  **/
+  border-right-width: 0;
+}
+.skin-black-light .main-header > .logo {
+  background-color: #ffffff;
+  color: #333333;
+  border-bottom: 0 solid transparent;
+  border-right: 1px solid #eee;
+}
+.skin-black-light .main-header > .logo:hover {
+  background-color: #fcfcfc;
+}
+@media (max-width: 767px) {
+  .skin-black-light .main-header > .logo {
+    background-color: #222222;
+    color: #ffffff;
+    border-bottom: 0 solid transparent;
+    border-right: none;
+  }
+  .skin-black-light .main-header > .logo:hover {
+    background-color: #1f1f1f;
+  }
+}
+.skin-black-light .main-header li.user-header {
+  background-color: #222;
+}
+.skin-black-light .content-header {
+  background: transparent;
+  box-shadow: none;
+}
+.skin-black-light .wrapper,
+.skin-black-light .main-sidebar,
+.skin-black-light .left-side {
+  background-color: #f9fafc;
+}
+.skin-black-light .content-wrapper,
+.skin-black-light .main-footer {
+  border-left: 1px solid #d2d6de;
+}
+.skin-black-light .user-panel > .info,
+.skin-black-light .user-panel > .info > a {
+  color: #444444;
+}
+.skin-black-light .sidebar-menu > li {
+  -webkit-transition: border-left-color 0.3s ease;
+  -o-transition: border-left-color 0.3s ease;
+  transition: border-left-color 0.3s ease;
+}
+.skin-black-light .sidebar-menu > li.header {
+  color: #848484;
+  background: #f9fafc;
+}
+.skin-black-light .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+  font-weight: 400;
+}
+.skin-black-light .sidebar-menu > li:hover > a,
+.skin-black-light .sidebar-menu > li.active > a {
+  color: #000000;
+  background: #ffffff;
+}
+.skin-black-light .sidebar-menu > li.active {
+  border-left-color: #4285f4;
+}
+.skin-black-light .sidebar-menu > li.active > a {
+  font-weight: 400;
+}
+.skin-black-light .sidebar-menu > li > .treeview-menu {
+  background: #f4f4f5;
+}
+.skin-black-light .sidebar a {
+  color: #444444;
+}
+.skin-black-light .sidebar a:hover {
+  text-decoration: none;
+}
+.skin-black-light .treeview-menu > li > a {
+  color: #777777;
+}
+.skin-black-light .treeview-menu > li.active > a,
+.skin-black-light .treeview-menu > li > a:hover {
+  color: #000000;
+}
+.skin-black-light .treeview-menu > li.active > a {
+  font-weight: 400;
+}
+.skin-black-light .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #d2d6de;
+  margin: 10px 10px;
+}
+.skin-black-light .sidebar-form input[type="text"],
+.skin-black-light .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid transparent;
+  height: 35px;
+}
+.skin-black-light .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+.skin-black-light .sidebar-form input[type="text"]:focus,
+.skin-black-light .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+.skin-black-light .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+.skin-black-light .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}
+@media (min-width: 768px) {
+  .skin-black-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
+    border-left: 1px solid #d2d6de;
+  }
+}
+
+
+/*** shang add ***/
+html, body {
+  background: #ececec;
+}
+
+.skin-black-light .main-header {
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4285f4;
+  border-left: 1px solid #4285f4;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:hover {
+    background-color: #4178be;
+}
+
+.skin-black-light .sidebar-menu > li > a:hover {
+  color: #fff;
+  background-color: #4285f4;
+}
+
+.skin-black-light .treeview-menu > li > a:hover {
+  color: #fff;
+  background-color: #4285f4;
+}
+
+.dropdown-menu {
+  box-shadow: none;
+  border-color: #4178be;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a:hover,
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover,
+.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a:hover {
+  color: #fff;
+  background-color: #4285f4;
+}
+
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover > p,
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover > h4,
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover > h4 > small {
+  color: #fff;
+}
+
+.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a:hover > h3,
+.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a:hover > h3 > small {
+  color: #fff;
+}
+
+.skin-black-light .main-header li.user-header {
+  background-color: #4285f4;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {
+  color: #fff;
+  background-color: #4285f4;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer > .pull-left > a:hover,
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer > .pull-right > a:hover {
+  background-color: #4178be;
+}
+/*** right pannel  ***/
+.control-sidebar-dark, .control-sidebar-dark + .control-sidebar-bg {
+  background: #fff;
+}
+
+.control-sidebar-dark + .control-sidebar-bg {
+  border-left: 1px solid #4178be;
+}
+
+.control-sidebar-dark {
+  border-left: 1px solid #4178be;
+}
+
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:hover, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:focus, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:active {
+  background: #4285f4;
+  color: #fff;
+}
+
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:active {
+    background: #4285f4;
+}
+
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a {
+  background: #4285f4;
+}
+
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover, 
+.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus {
+  border-left-color: #4178be;
+  border-bottom-color: #4178be;
+}
+
+.control-sidebar-dark .control-sidebar-subheading {
+    color: #000;
+}
+
+.control-sidebar-dark .control-sidebar-heading {
+  color: #000;
+}
+
+.control-sidebar-dark .control-sidebar-menu > li > a > .menu-info > .control-sidebar-subheading {
+    color: #000;
+}
+
+.control-sidebar-dark .control-sidebar-menu > li > a:hover > .menu-info > .control-sidebar-subheading,
+.control-sidebar-dark .control-sidebar-menu > li > a:focus > .menu-info > .control-sidebar-subheading,
+.control-sidebar-dark .control-sidebar-menu > li > a:active > .menu-info > .control-sidebar-subheading {
+	color: #fff;
+}
+
+.control-sidebar-dark .control-sidebar-menu > li > a:hover,
+.control-sidebar-dark .control-sidebar-menu > li > a:focus,
+.control-sidebar-dark .control-sidebar-menu > li > a:active  {
+	background: #4285f4;
+}
+
+.control-sidebar-dark .control-sidebar-menu > li > a > .control-sidebar-subheading {
+	color: #000;
+}
+
+.control-sidebar-dark .control-sidebar-menu > li > a:hover > .control-sidebar-subheading,
+.control-sidebar-dark .control-sidebar-menu > li > a:focus > .control-sidebar-subheading,
+.control-sidebar-dark .control-sidebar-menu > li > a:active > .control-sidebar-subheading {
+	color: #fff;
+}
+
+a {
+    color: #4285f4;
+}
+
+.text-aqua {
+    color: #4178be !important;
+}

@@ -1,0 +1,214 @@
+/*
+*	COMMON LAYOUT PANE FORMATTING
+*/
+.pane ,				/* outer pane class */
+.ui-layout-pane {	/* inner pane class */
+	background-color: #FFF;
+	border: 1px solid #777;
+	padding: 0;/* alignment & padding is on the inner-divs */
+	overflow: auto; /* will be auto-set to 'hidden' for any pane with a 'scrolling content div' */
+}
+
+.ui-layout-pane-north{
+	background-color: #ececec;
+	border-bottom: 0px solid #777;
+	padding: 0;/* alignment & padding is on the inner-divs */
+	overflow: hidden;
+}
+
+.ui-layout-resizer-south-closed {
+	background-color: #ececec;
+	border-left: 1px solid #777;
+	border-bottom: 0px solid #777;
+	padding: 0;/* alignment & padding is on the inner-divs */
+	overflow: hidden;
+}
+.ui-layout-container{
+	border-bottom: 0px solid #777;
+}
+/*
+*	OUTER-LAYOUT PANE FORMATTING
+*/
+.pane-north {
+	overflow:		hidden;
+}
+
+.pane-west {
+	overflow: hidden;
+	background-color: #ececec;
+}
+
+
+/* inner divs inside Outer East/West panes */
+.header {
+	text-align: center;
+	padding: 2px 0 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.content {
+	padding:	0px;
+	position:	relative;
+	overflow:	auto;
+}
+
+.noscroll {
+        overflow-y: hidden;
+}
+
+.frame{
+        width:         100%;
+        height:        100%;
+        border:        0;
+        padding:	0 !important; /* iframes should not have padding overflow:	auto !important;*/
+        /**
+         overflow:      auto;
+	overflow: SCROLL; !important;
+	overflow-y: HIDDEN; !important;
+	OVERFLOW-X:HIDDEN; !important;  **/
+}
+
+
+
+/* IE6 * HACK - always show resizer graphics because IE6 cannot understand elem:hover */
+/** html .resizer-north , */
+* html .resizer-south ,
+* html .resizer-west-open ,
+* html .resizer-east-open {
+	opacity: 0.1 !important;
+	filter: alpha(opacity=10) !important;
+}
+
+/*
+*	SIMPLE TOGGLER BUTTONS (used on Outer Layout North/South only)
+*/
+
+.toggler-west-closed { 
+   background: url(../image/west-open.png) no-repeat center; 
+   
+}
+
+/*
+*	extJS-STYLE RESIZER/SLIDER-BAR (CLOSED)
+*/
+.resizer-west-closed {
+	border-top: 0px solid #ececec;
+	border-bottom: 0px solid #ececec;
+	background: #ececec;
+}
+.resizer-west-closed:hover {
+	background: #CCCCCC;
+}
+
+
+
+
+/* CUSTOM pin/close buttons */
+span.button-pin ,
+span.button-close {
+	position:	absolute;
+	top:		0;
+	width: 		20px;
+	height:		20px;
+	z-index:	2;
+	display:	block;
+	cursor: 	pointer;
+}
+span.button-pin-west	{ right: 1px; }
+
+/* CUSTOM pin-buttons */
+span.button-pin-up 		  	{ background: url(../image/pin-up-off.gif) no-repeat center; }
+span.button-pin-up:hover   		{ background: url(../image/pin-up-on.gif)  no-repeat center; }
+span.button-pin-down 	  		{ background: url(../image/pin-dn-off.gif) no-repeat center; }
+span.button-pin-down:hover 		{ background: url(../image/pin-dn-on.gif)  no-repeat center; }
+
+
+
+
+/*************************************************************************************************************/
+/* logo */
+/**
+.ui-layout-west-panel {
+   background-color: #ececec;
+   border-right: 1px solid #bdbdbd;
+   border-left: 1px solid #bdbdbd;
+   height: 100%;
+}**/
+
+.logo-container,.west-panel-middle-content,.west-panel-bottom-content {margin-left:10px;padding-top:5px}
+.logo-container-a {color:#262626;text-decoration:none}
+.logo-container-h1 {display:table;font-size:inherit;font-weight:inherit;margin:0;padding:0}
+.logo-outside {display:table-cell;vertical-align:bottom}
+.logo {	
+    /**background:url(../image/logo_middle.png);**/
+    background:url(../image/tiomg_logo_small.png);
+    background-size:cover;
+    width:136px;
+    height:46px;
+    /**width:194px;
+    height:62px;
+    /**width:60px;height:32px;**/
+    display:inline-block;
+    float:left
+}
+.logo-description {font-size:16px;position:relative;top:5px;padding-left:5px;float:left;width:185px;}
+
+.logo-container-a:hover, .logo-container-a:focus {
+   color: #1c5ac4;
+}
+
+/**search box*/
+.searchbox-container input:focus,.searchbox-container input.box{border:1px solid #4078c7}
+.searchbox{width:196px;height:24px;margin-top:12px;margin-left:9px;border:1px solid #bdbdbd;-webkit-box-shadow:inset 0px 2px 2px #ececec,0px 1px 1px #fff;-moz-box-shadow:inset 0px 2px 2px #ececec,0px 1px 1px #fff;box-shadow:inset 0px 2px 2px #ececec,0px 1px 1px #fff;background-color:#fff;padding:2px 2px 2px 20px;outline:none;font-size:12px;font-family:'Open Sans',arial,sans-serif}
+
+
+.west-panel-middle { 
+   padding: 0px;
+   position: relative;
+   overflow: auto;
+}
+.west-panel-bottom { 
+   text-align: center;
+   white-space: nowrap;
+   height: 30px;
+   background-color: #d6d6d6;
+   border-top: 1px solid #BBB;
+ }
+.west-panel-bottom-content{text-align: center;}
+
+
+
+/**user panel*/
+.tools_bar,.user_panel {
+   width: 100%;
+   align: center;
+   text-align: right;
+   vertical-align:middle;
+}
+
+/**user panel*/
+.user-name{color:#333;cursor:default;padding-right:10px;vertical-align:middle;}
+.user-name:hover,.user-name:focus{color:#4d7bd6}
+
+/**system settings*/
+.system-settings {
+   background:url(../image/system_settings-none.png) no-repeat center;
+   vertical-align:middle;
+}
+.system-settings:hover,.system-settings:focus {
+   background:url(../image/system_settings-hover.png) no-repeat center;
+   vertical-align:middle;
+}
+
+
+.br-div {
+   width: 220px;
+   margin-left: 9px;
+   border-top: 1px solid #c6c6c6;
+   border-bottom: 1px solid #fff;
+   margin-top: 10px;
+   margin-bottom: 6px;
+}
